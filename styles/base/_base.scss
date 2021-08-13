@@ -1,0 +1,46 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 15px;
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: $font-josefin;
+  text-transform: uppercase;
+}
+p,
+a {
+  font-family: $font-alata;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+
+/*---------- responsive -----------*/
+@mixin for-phone {
+  @media (max-width: 600px) {
+    @content;
+  }
+}
+@mixin for-tablet {
+  @media (max-width: 768px) {
+    @content;
+  }
+}
+@mixin for-laptop {
+  @media (max-width: 992px) {
+    @content;
+  }
+}
